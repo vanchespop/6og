@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 2002.1 1121" style="enable-background:new 0 0 2002.1 1121;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;}
+	.st1{clip-path:url(#SVGID_2_);fill:none;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;}
+	.st2{clip-path:url(#SVGID_4_);fill:none;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;}
+</style>
+<title>romb2_white</title>
+<polygon class="st0" points="1100.1,788.7 632,787.3 906.8,329.3 1372,329.3 "/>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="3.4" width="907" height="1121"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<line class="st1" x1="749.2" y1="-12.2" x2="3.4" y2="1132"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_3_" x="1167.2" width="834.9" height="1121"/>
+	</defs>
+	<clipPath id="SVGID_4_">
+		<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+	</clipPath>
+	<line class="st2" x1="1997.6" y1="-4" x2="1254" y2="1125.8"/>
+</g>
+</svg>
