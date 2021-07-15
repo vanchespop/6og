@@ -1,6 +1,6 @@
 <template>
   <main>
-      <video loop autoplay>
+      <video loop autoplay muted ref="instruction">
         <source src="../../../public/orbita/instruction.mp4"/>
       </video>
   </main>
@@ -8,7 +8,11 @@
 
 <script>
 export default {
-  name: "Orbita"
+  name: "Orbita",
+  mounted: function() {
+    let vid = this.$refs.instruction;
+    vid.muted = !vid.muted
+  },
 }
 </script>
 
@@ -21,6 +25,7 @@ main {
 
 video {
   height: 100%;
+  width: 100%
 }
 
 
