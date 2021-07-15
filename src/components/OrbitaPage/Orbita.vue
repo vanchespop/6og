@@ -1,6 +1,6 @@
 <template>
   <main>
-      <video loop controls >
+      <video loop autoplay>
         <source src="../../../public/orbita/instruction.mp4"/>
       </video>
   </main>
