@@ -101,6 +101,13 @@
         }
     }
 
+    @media all and (max-width: 400px) {
+       .carousel-caption > p {
+         padding: 0 40px;
+       }
+    }
+
+
     html, body {
         height: 100%;
         width: 100%;
