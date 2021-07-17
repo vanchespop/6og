@@ -6,8 +6,8 @@ import LandingPage from "@/components/LandingPage/Landing";
 import OrbitaPage from "@/components/OrbitaPage/Orbita";
 import Item from "@/components/ItemPage/Item";
 import CheckoutPage from "@/components/Checkout/CheckoutPage";
+import Success from "../src/components/Checkout/Success";
 import OopsPage from "@/components/OopsPage";
-//import AppPage from "@/components/Shop/AppPage";
 import Orders from "../src/components/OrdersPage/Orders";
 
 Vue.use(Router)
@@ -46,6 +46,10 @@ const router = new Router({
         {
             path: '/orders',
             component: Orders
+        },
+        {
+            path: '/success',
+            component: Success
         },
         {
             path: '*',

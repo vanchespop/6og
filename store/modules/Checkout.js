@@ -330,7 +330,7 @@ const actions = {
                     capture: false,
                     confirmation: {
                         type: "redirect",
-                        return_url: "https://6og.ooo/checkout"
+                        return_url: `https://6og.ooo/success?orderid=${idem_key}&name=${state.firstName}`
                     },
                 }
             })

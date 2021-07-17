@@ -2,9 +2,8 @@
     <button class="yandex-button" @click="postOrder(isInvalid, validate)">
         <span class="yandex-button__wrap">
             Complete Order
-<!--            <img class="yandex-button__yandex" src="../../../public/checkout/yandexcheckout.png">-->
             <img class="yandex-button__icon" src="../../../public/checkout/card.png">
-            <img class="yandex-button__icon ap" src="../../../public/checkout/applepay.svg">
+<!--            <img class="yandex-button__icon ap" src="../../../public/checkout/applepay.svg">-->
             <img class="yandex-button__icon gp" src="../../../public/checkout/googlepay.svg">
         </span>
     </button>
@@ -22,7 +21,7 @@
                 } else {
                     this.$store.dispatch("Checkout/postOrder");
                 }
-            },
+            }
         }
     }
 </script>
@@ -45,10 +44,6 @@
 
     .yandex-button__wrap {
         height: 100%;
-    }
-
-    .yandex-button__yandex {
-        height: 37%;
     }
 
     .yandex-button__icon {

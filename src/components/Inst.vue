@@ -1,6 +1,6 @@
 <template>
     <a :light="light" class="inst" href="https://www.instagram.com/6og/" target="_blank">
-      <img v-if="!light" class="logo__inst" src="../../public/mainpage/inst.svg">
+      <img v-if="!light" class="logo__inst absolute" src="../../public/mainpage/inst.svg">
       <img v-else class="logo__inst" src="../../public/mainpage/inst_white.svg">
     </a>
 </template>
@@ -14,12 +14,15 @@
 
 <style scoped>
     .logo__inst {
-        position: absolute;
-        top: 60px;
-        right: 7%;
-        width: 30px;
-        min-width: 30px;
+        width: 34px;
+        min-width: 34px;
         transition: all .2s;
+    }
+
+    .absolute {
+      position: absolute;
+      top: 60px;
+      right: 7%;
     }
 
     .logo__inst:hover {

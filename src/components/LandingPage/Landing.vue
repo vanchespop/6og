@@ -1,15 +1,14 @@
 <template>
   <main>
-    <ShopInstButton :name="'shop'" :light="true" :text="'SHOP'"/>
+      <router-link to="/shop">
+      <div class="hidden-link"></div>
+      </router-link>
   </main>
 </template>
 
 <script>
-import ShopInstButton from "@/components/Shop/ShopInstButton";
-
 export default {
-  name: "Landing",
-  components: {ShopInstButton},
+  name: "Landing"
 }
 </script>
 
@@ -23,6 +22,15 @@ main {
   margin: auto;
   background: url("../../../public/landing/landingPC.gif") no-repeat fixed center center;
   background-size: cover;
+}
+
+.hidden-link {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  top: calc(50% - 100px);
+  left: calc(50% - 150px);
+  cursor: pointer;
 }
 
 @media (max-width: 590px) {

@@ -1,5 +1,5 @@
 <template>
-    <div v-if="visible" @click="isOpen = !isOpen">
+    <div @click="isOpen = !isOpen">
       <div class="dropdown arrow">
         {{ this.$store.state.Items.selectedDrop.title }}
       </div>
@@ -12,7 +12,6 @@
 <script>
 export default {
   name: "Dropdown",
-  props: ['items', 'visible'],
   data () {
     return {
       isOpen: false,
@@ -34,8 +33,8 @@ export default {
 
 <style>
   .dropdown {
-    width: 125px;
-    padding: 3px 20px;
+    width: 110px;
+    padding: 3px 25px 3px 15px;
     background: transparent;
     border : 2px solid #101010;
     color: #101010;
@@ -53,8 +52,10 @@ export default {
   .sub-menu {
     position: absolute;
     background-color: #ffffff;
+    z-index: 9999;
   }
   .menu-item  {
     margin-top: -2px;
+    padding: 3px 20px;
   }
 </style>

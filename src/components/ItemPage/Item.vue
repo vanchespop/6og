@@ -1,6 +1,6 @@
 <template>
     <main>
-        <router-link to="/" class="logo__sm"><img src="../../../public/mainpage/logo_the_future.png"></router-link>
+        <router-link to="/shop" class="logo__sm"><img src="../../../public/mainpage/logo_the_future.png"></router-link>
         <section class="carousel-section">
             <ItemCarousel :id="id"/>
         </section>

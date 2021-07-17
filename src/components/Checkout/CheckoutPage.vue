@@ -103,7 +103,6 @@
             </div>
             <img class="logo__gog" src="../../../public/mainpage/6og_white.svg">
         </section>
-        <SuccessModal v-if="successModal"/>
         <FailModal v-if="failModal"/>
     </main>
 </template>
@@ -112,13 +111,12 @@
     //TODO СДЕЛАТЬ ПРОВЕРКУ НА ПРАВИЛЬНОСТЬ ЗАПОЛНЕНИЯ СТРАНЫ
     import {mapGetters, mapState} from 'vuex'
     import {email, required} from 'vuelidate/lib/validators'
-    import SuccessModal from "@/components/Checkout/SuccessModal";
     import FailModal from "@/components/Checkout/FailModal";
     import YandexKassa from "@/components/Checkout/YandexKassa";
 
     export default {
         name: "CheckoutPage",
-        components: {YandexKassa, FailModal, SuccessModal},
+        components: {YandexKassa, FailModal},
         validations: {
             email: {
                 required,
@@ -240,18 +238,7 @@
             if (window.body.classList.contains('modal__active')) {
                 window.body.classList.remove('modal__active')
             }
-        },
-        methods: {
-            toggleSuccessModal: function () {
-                if (document.referrer.includes("https://money.yandex.ru/payments/checkout/success")) {
-                    this.$store.commit("Cart/clearCart");
-                    this.$store.commit("Checkout/toggleSuccessModal")
-                }
-            }
-        },
-        beforeMount() {
-            this.toggleSuccessModal()
-        },
+        }
     }
 </script>
 
@@ -454,7 +441,6 @@
         font-size: 28px;
         margin-bottom: 4px;
         text-overflow: ellipsis;
-        white-space: nowrap;
         color: white;
     }
 

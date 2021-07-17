@@ -24,7 +24,7 @@
         methods: {
             toggleSuccessModal() {
                 this.$store.commit("Checkout/toggleSuccessModal");
-                location.href ='https://6og.ooo'
+                location.href ='https://6og.ooo/shop'
             },
         }
     }

@@ -28,7 +28,7 @@
 <style scoped>
     .shopping-cart {
         margin-top: -1px;
-        width: 30px;
+        width: 34px;
         cursor: pointer;
         transition: all .2s;
     }
