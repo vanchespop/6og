@@ -32,7 +32,7 @@ export default {
   components: {ShopButton},
   beforeMount() {
     const id = this.$route.query.orderid || 0;
-    axios.get('https://cors.bridged.cc/https://6og.ooo/api/orders')
+    axios.get('https://6og.ooo/api/orders')
         .then(res => {
           if(res.data.findIndex(el => el.id === id) === -1) {
             this.$router.push('/checkout')
