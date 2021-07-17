@@ -288,7 +288,7 @@ const getters = {
         if (getters.countryCode === "RU") {
             return 0
         } else {
-            return 1000
+            return 3000
         }
     }
 

@@ -62,7 +62,7 @@
                 <h2 class="section-title">Shipping</h2>
                 <div class="checkout__bordered-section" style="margin-bottom: 30px">
                     <p class="checkout__delivery">Russia: FREE</p>
-                    <p class="checkout__delivery">WorldWide: DHL $15/1.000₽</p>
+                    <p class="checkout__delivery">WorldWide: DHL $40/3.000₽</p>
                 </div>
                 <div class="checkout__section">
                     <div class="checkout__pay-section">

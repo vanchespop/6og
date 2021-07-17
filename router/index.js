@@ -44,7 +44,7 @@ const router = new Router({
             component: CheckoutPage
         },
         {
-            path: '/orders',
+            path: '/60g60gloremipsum2500',
             component: Orders
         },
         {
