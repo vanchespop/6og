@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="wrapper" v-if="orderFound">
+    <div class="wrapper">
       <div class="container">
         <div class="tick"><img src="../../../public/checkout/galochka.svg" width="60px" height="60px"></div>
         <div class="header">
@@ -8,7 +8,7 @@
           <div class="order-confirmed">Your order is confirmed</div>
         </div>
       </div>
-      <div class="order-num">ORDER #{{ this.$route.query.orderid }}</div>
+      <div class="order-num">ORDER #{{ this.$route.query.id }}</div>
       <p class="info">
         We’ve accepted your order, and we’re getting it ready.
       </p>
@@ -23,15 +23,15 @@
 import ShopButton from "../ShopButton";
 
 
-const axios = require('axios').default;
+//const axios = require('axios').default;
 export default {
   name: "Success",
-  data () {
+  /*data () {
     return { orderFound: false }
-  },
+  },*/
   components: {ShopButton},
   beforeMount() {
-    const id = this.$route.query.orderid || 0;
+    /*const id = this.$route.query.orderid || 0;
     axios.get('https://6og.ooo/api/orders')
         .then(res => {
           if(res.data.findIndex(el => el.id === id) === -1) {
@@ -40,7 +40,7 @@ export default {
             this.$store.commit("Cart/clearCart");
             this.orderFound = true;
           }
-        })
+        })*/
   }
 }
 </script>
